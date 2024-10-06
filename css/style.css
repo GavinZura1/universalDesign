@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    background-color: #f6e9d5;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sr-only { /* removes info that the user does not need to see but lets screen readers still read it for helpful conext */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+  }
+
+h1,h2,h3 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+h2 {
+    font-size: 1.3em;
+}
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 1.5em; /* very important for class, extends area between lines */
+    margin-bottom: 1.7em;
+}
+
+nav ul li {
+    list-style: none;
+    /* text-decoration: underline; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.8em;
+    padding: 5px;
+}
+nav ul li a:link {
+    color:blue;
+}
+nav ul li a:visited {
+    color:purple;
+}
+nav ul li a:hover {
+    color:white;
+    background: black;
+}
+nav ul li a:active {
+    color:yellow;
+}
+
