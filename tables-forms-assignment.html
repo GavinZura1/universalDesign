@@ -1,0 +1,360 @@
+<!-- CSCI 3150 Wiki Assignment Gavin Zura-->
+
+<!-- Semantics Walkthrough 9/21/24 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Orleans Saints</title>
+        <!-- css here -->
+         <link href="css/style.css" rel="stylesheet">
+         <link href="css/normalize.css" rel="stylesheet">
+    </head>
+    <body>
+        <a class="skip-link" href="#fantasy-overview">Skip to main content</a>
+        <div class="container">
+        <!-- main heading of page - only use one h1 per page-->
+         <header>
+            <h1>Fantasy Football</h1> <!-- h1 is a child and needs a parent-->
+            <time datetime="2024-10-20">October 20, 2024</time>
+         </header>
+
+         <!-- main navigation links-->
+         <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href="#fantasy-overview">What is Fantasy Football</a></li>
+                <li><a href="#fantasy-positions">Fantasy Positions</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#faq">Frequently Asked Questions</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+         </nav>
+
+         <!-- main is the content that differs from page to page -->
+         <main>
+            <!-- grouping content together -->
+            <pre aria-hidden="true" style="text-align: center;"><code style="font-size: 16px;">
+                           ░██████████████████████████████▒                           
+                           ████████████████████████████████                           
+                           ███▒                        ▒███                           
+                           ████ ███ ███████▓██████ ███ ▓███                           
+                           ████ ██████████████████████ ████                           
+              ██████████████████████████████████████████████████████████              
+              ███      ██    ███   ██  █       █    ███      █  ███  ███              
+              ███  ██████    ███    █  ███  ████  █  ██  ███████ ▒  ████              
+              ███    ░██  █   ██  █    ███  ████     ░████░  ▓███  █████              
+              ███  ████▓  ███  █  ██   ███  ███  ███  █      ▓███  █████              
+   ████████████████████████████████████████████████████████████████████████████████   
+ █████████████░      ██        ██         █         ███     █████   █████████████████ 
+ ███        █         █   ███   ████   █████  ███   ███      ████   ██████   ████████ 
+ ███   ██████  ████   █   ███   ████   █████       ████  ██  ████   ███████  ████████ 
+ ███      ███  ████   █   ███   ████   █████  ███░  ██        ███   ███████  ████████ 
+ ███   ██████   ███   █         ████   ████         █   ████   ██   ██   ██  ████████ 
+ ███   ███████       ████████████████████████████████████████  ██        █        ███ 
+ ███████████████████████████████████████      ███████████████████████████████████████ 
+ ████████▓▒                 ███▓ █████ ▒      ▒ ▓████ ▓███                 ░▓████████ 
+   ██████▒███████████████████████ ███▒  ░▓██▓░  ▒███ ███████████████████████▓██████   
+        ███▒                  ████  ███▓▓▒▒▒▒▓▓███  ████                  ▒███        
+                               ████▒ ▒███████████ ▒████                               
+                                 █████   ████░  █████                                 
+                                   ██████    ██████                                   
+                                      ██████████                                      
+                                                                                                      
+            </code></pre>
+
+            <section id="fantasy-overview">
+                <h2>What is Fantasy Football? <span aria-hidden=”true” class="material-icons">sports_football</span></h2>
+                <p>Fantasy football is a <em>virtual game</em> where participants act as team managers, assembling rosters made up of real-life <abbr title="National Football League">NFL</abbr> players. Each week, your team's <strong>performance</strong> is determined by the actual statistics of your players during their games. Points are awarded based on their yardage, touchdowns, and other contributions. The goal is to outscore your opponent by making strategic decisions, such as choosing the best starters or trading for stronger players. It's an exciting way to engage with football, mixing real-life stats with fantasy strategy!
+                This website will help you understand and potentially prepare for fantasy football, <strong>however</strong>, fantasy football is as much a game of chance as it is strategy so <mark>this guide will not guarantee success.</mark></p>
+                <blockquote cite="https://www.azquotes.com/quotes/topics/fantasy-football.html">
+                    <q>
+                        Thank you... fantasy football draft, for letting me know that even in my fantasies, I am bad at sports.
+                    </q>
+                    <cite> - Jimmy Fallon</cite>
+                </blockquote>
+                <p></p>
+                <p>Each fantasy league is set up differently, but the traditional scoring system remains fairly consistent across most formats. Points are awarded based on player performance in key areas such as touchdowns, yardage, and receptions. Understanding how scoring works is crucial to drafting a competitive team and making in-game decisions. Below is a breakdown of the common scoring categories in fantasy football:</p>
+
+
+                <table>
+                    <caption>Fantasy Football Scoring <span aria-hidden=”true” class="material-icons">scoreboard</span></caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Action</th>
+                        <th scope="col">Points</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Touchdown (TD)</td>
+                        <td>6 points</td>
+                      </tr>
+                      <tr>
+                        <td>Passing Yards</td>
+                        <td>1 point per 25 yards</td>
+                      </tr>
+                      <tr>
+                        <td>Rushing Yards</td>
+                        <td>1 point per 10 yards</td>
+                      </tr>
+                      <tr>
+                        <td>Reception (Catch)</td>
+                        <td>1 point (in <abbr title="Points Per Reception">PPR</abbr> leagues)</td>
+                      </tr>
+                      <tr>
+                        <td>Fumble Lost</td>
+                        <td>-2 points</td>
+                      </tr>
+                      <tr>
+                        <td>Interception Thrown</td>
+                        <td>-2 points</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+
+            </section>
+            <section id="fantasy-positions">
+                <h2>Fantasy Positions</h2>
+            
+                <h3>Quarterbacks</h3>
+                <p>Quarterbacks are often the cornerstone of a fantasy team, as they typically score the most points on a consistent basis. The best fantasy quarterbacks, like Patrick Mahomes and Josh Allen, are dual-threat players who can accumulate points through both passing yards and rushing yards. Important stats to watch for include touchdown passes, rushing touchdowns, and completion percentages.</p>
+                <table>
+                    <caption>2022-23 Quarterback Stats <span aria-hidden=”true” class="material-icons">scoreboard</span></caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Player</th>
+                        <th scope="col">Passing Yards</th>
+                        <th scope="col">Passing TDs</th>
+                        <th scope="col">Rushing Yards</th>
+                        <th scope="col">Total Fantasy Points</th>
+                        <th scope="col">Average Fantasy <abbr title="Points per Game">PPG</abbr></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Patrick Mahomes</td>
+                        <td>5,250</td>
+                        <td>41</td>
+                        <td>350</td>
+                        <td>450</td>
+                        <td>28.1</td>
+                      </tr>
+                      <tr>
+                        <td>Josh Allen</td>
+                        <td>4,283</td>
+                        <td>35</td>
+                        <td>762</td>
+                        <td>429</td>
+                        <td>26.8</td>
+                      </tr>
+                      <tr>
+                        <td>Jalen Hurts</td>
+                        <td>3,701</td>
+                        <td>22</td>
+                        <td>760</td>
+                        <td>397</td>
+                        <td>24.8</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <figure>
+                    <img src="img/mahomes-min.jpg" alt="Patrick Mahomes in a red chiefs uniform excited before the super bowl" style="width: 20em;">
+                    <figcaption>Patrick Mahomes</figcaption>
+                </figure>
+
+
+
+                <h3>Running Backs</h3>
+                <p>Running backs are critical in fantasy football, especially in leagues that prioritize rushing yards and touchdowns. Elite players like Christian McCaffrey and Derrick Henry are known for their ability to both run the ball and catch passes, making them valuable assets in <abbr title="Points Per Reception">PPR</abbr> leagues. Key stats to look for include total carries, <abbr title="Yards After Contact">YAC</abbr> and receptions.</p>
+                <table>
+                    <caption>2022-23 Running Back Stats <span aria-hidden=”true” class="material-icons">scoreboard</span></caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Player</th>
+                        <th scope="col">Rushing Yards</th>
+                        <th scope="col">Rushing TDs</th>
+                        <th scope="col">Receptions</th>
+                        <th scope="col">Total Fantasy Points</th>
+                        <th scope="col">Average Fantasy <abbr title="Points per Game">PPG</abbr></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Christian McCaffrey</td>
+                        <td>1,159</td>
+                        <td>14</td>
+                        <td>85</td>
+                        <td>369</td>
+                        <td>21.7</td>
+                      </tr>
+                      <tr>
+                        <td>Derrick Henry</td>
+                        <td>1,538</td>
+                        <td>13</td>
+                        <td>33</td>
+                        <td>317</td>
+                        <td>19.8</td>
+                      </tr>
+                      <tr>
+                        <td>Saquon Barkley</td>
+                        <td>1,312</td>
+                        <td>10</td>
+                        <td>57</td>
+                        <td>295</td>
+                        <td>18.4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <figure>
+                    <img src="img/cmc-min.jpeg" alt="Christian McCaffrey flexing in a red 49ers uniform" style="width: 20em;">
+                    <figcaption>Christian McCaffrey</figcaption>
+                </figure>
+
+
+
+
+                <h3>Wide Receivers</h3>
+                <p>Wide receivers are your top point scorers in many formats, especially in leagues where receptions matter. Players like Justin Jefferson and Tyreek Hill stand out due to their ability to rack up receptions and  <abbr title="Yards After Catch">YAC</abbr>. In addition to touchdowns, watch for targets and yards per catch to identify top performers.</p>
+                <table>
+                    <caption>2022-23 Wide Receiver Stats <span aria-hidden=”true” class="material-icons">scoreboard</span></caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Player</th>
+                        <th scope="col">Receiving Yards</th>
+                        <th scope="col">Receiving TDs</th>
+                        <th scope="col">Receptions</th>
+                        <th scope="col">Total Fantasy Points</th>
+                        <th scope="col">Average Fantasy <abbr title="Points per Game">PPG</abbr></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Justin Jefferson</td>
+                        <td>1,809</td>
+                        <td>8</td>
+                        <td>128</td>
+                        <td>361</td>
+                        <td>21.2</td>
+                      </tr>
+                      <tr>
+                        <td>Tyreek Hill</td>
+                        <td>1,710</td>
+                        <td>11</td>
+                        <td>119</td>
+                        <td>356</td>
+                        <td>21.0</td>
+                      </tr>
+                      <tr>
+                        <td>Stefon Diggs</td>
+                        <td>1,429</td>
+                        <td>10</td>
+                        <td>108</td>
+                        <td>320</td>
+                        <td>20.0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <figure>
+                    <img src="img/Jefferson_2022-min.jpg" alt="Justin Jefferson running onto the field in a white Vikings uniform" style="width: 20em;">
+                    <figcaption>Justin Jefferson</figcaption>
+                </figure>
+            </section>
+            
+            
+
+            <section id="summary">
+                <h2> Summary </h2>
+                <p>Fantasy football is an engaging, strategy-driven game that combines real NFL player performances with virtual team management. Throughout the season, you’ll draft players, set lineups, and make crucial decisions to outscore your opponents. Success in fantasy football hinges on your ability to evaluate player stats, stay updated on the latest NFL trends, and make strategic adjustments each week. Whether you’re a seasoned player or new to the game, fantasy football offers an exciting way to immerse yourself in the sport while having fun with friends and fellow fans.</p>
+            </section>
+
+            <section id="faq">
+                <h2> <abbr title="Frequently Asked Questions">FAQ</abbr> </h2>
+              
+                <details>
+                  <summary>What is fantasy football?</summary>
+                  <p>Fantasy football is a game where participants act as team managers, drafting real-life NFL players and scoring points based on their on-field performance. The goal is to outscore opponents by assembling the best possible team each week.</p>
+                </details>
+              
+                <details>
+                  <summary>How do I score points in fantasy football?</summary>
+                  <p>You score points based on your players' statistics. Common scoring includes points for touchdowns, yardage (passing, rushing, and receiving), receptions (in PPR leagues), and sometimes defensive plays like interceptions or fumble recoveries.</p>
+                </details>
+              
+                <details>
+                  <summary>What does PPR mean?</summary>
+                  <p>PPR stands for "Points Per Reception." In PPR leagues, players earn additional points for each catch, making pass-catching running backs and wide receivers more valuable.</p>
+                </details>
+              
+                <details>
+                  <summary>How do I win in fantasy football?</summary>
+                  <p>To win, you need to manage your team effectively by making smart decisions with your draft, setting the best lineups each week, and staying active in trades and the waiver wire to strengthen your roster.</p>
+                </details>
+              
+                <details>
+                  <summary>Can I play fantasy football with my friends?</summary>
+                  <p>Yes! Most fantasy leagues are set up with friends, family, or coworkers. You can join or create private leagues to compete against people you know, or join public leagues to play against others online.</p>
+                </details>
+              
+                <details>
+                  <summary>How does a fantasy draft work?</summary>
+                  <p>A fantasy draft is where each participant selects NFL players for their team. Drafts can be "snake" style, where the pick order reverses each round, or "auction," where you bid for players using a set budget.</p>
+                </details>
+              </section>
+
+              <section id="form">
+                <h2>Form</h2>
+                <form id="myform" method="post">
+                    <fieldset>
+                        <legend>How did I do?</legend>
+        
+                        <label for="username">
+                            What is your name?
+                            <input type="text" id="username" placeholder="First Last" required>
+                        </label>
+        
+                        <label for="your-email">
+                            What is your email?
+                            <input type="email" id="your-email" placeholder="example@email.com" required>
+                        </label>
+        
+                        <label for="age">
+                            What is your age?
+                            <input type="number" id="age" placeholder="35">
+                        </label>
+
+                        <label for="comments">
+                            Comments on this website?
+                            <input type="text" id="comments" placeholder="I liked/dislike..." required>
+                        </label>
+        
+                        <input type="submit">
+        
+                    </fieldset>
+                </form>
+              </section>
+              
+         </main>
+
+         <aside>
+            <h2>Sources</h2>
+            <h2 class="sr-only">Information sources</h2>
+            <ul>
+                <li><a href="https://www.nfl.com/players/">Player Stats</a></li>
+                <li><a href="https://fantasydata.com/nfl/fantasy-football-leaders">Player Fantasy Stats</a></li>
+            </ul>
+         </aside>
+
+         <footer>
+            <p>Designed by Gavin Zura</p>
+            <address>Gavin.Zura@colorado.edu</address>
+            <small>&copy; 2024</small>
+         </footer>
+
+
+        </div> <!-- end container -->
+    </body>
+</html>
