@@ -104,7 +104,7 @@ nav ul li a:link {
     text-decoration: underline;
 }
 nav ul li a:visited {
-    color:purple;
+    color: #ded5d5;
 }
 nav ul li a:hover {
     color:white;

@@ -85,13 +85,13 @@ main {
 
 #aside1 {
     grid-area: aside1;
-    background: #85714D; 
+    background: #594727; 
     color: #f8f9fa;
 }
 
 #aside2 {
     grid-area: aside2;
-    background: #85714D; 
+    background: #594727; 
     color: #1d1f21;
 }
 
