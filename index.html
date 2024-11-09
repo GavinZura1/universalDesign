@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Universal Design - Gavin Zura</title>
-        <!-- css here -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="css/responsive-home.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/home-style.css" rel="stylesheet">
+</head>
 <body>
+    <a class="skip-link" href="#picture">Skip to main content</a>
     <div class="container">
-    <header>
-        <h1>CSCI 3150 - Universal Design</h1>
-        <h2>Gavin Zura</h2>
+        <header>
+            <h1>Gavin Zura - Class Portal</h1>
+        </header>
+
         <nav>
             <h2 class="sr-only">Main Navigation</h2>
             <ul>
-                <li><a href="wiki-assignment.html">Wiki Assignment</a></li>
-                <li><a href="tables-forms-assignment.html">Tables and Forms Assignment</a></li>
-                <li><a href="css-grid.html">Responsive CSS</a></li>
+                <li><a href="wiki-assignment.html">Lab 1</a></li>
+                <li><a href="tables-forms-assignment.html">Lab 2</a></li>
+                <li><a href="css-grid.html">Lab 3</a></li>
             </ul>
-        </nav>
-    </header>
+         </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, my name is Gavin Zura. I am from New Orleans and love almost anything outdoors. I am super excited about Saints and Colorado football this year.</p>
-    </section>
+         <div id="picture">
+            <!-- Picture content -->
+            <figure>
+                <img src="img/me.png" alt="me, a white male wearing a gray suit smiling outside in the sun" style="width: 20em; display: block; margin-left: auto; margin-right: auto; padding: 1em;">
+                <figcaption style="text-align: center;">This is me!</figcaption>
+            </figure>
+        </div>
+        <main>
+            <!-- About Me content -->
+             <section>
+                <h2>About Me</h2>
+                <p>Hi, my name is Gavin Zura and welcome to my website for CSCI 3150. I am from New Orleans and am currently a senior attending the University of Colorado at Boulder. I love almost all things sports and am a huge fan of the New Orleans Saints. In my free time I like to create music and video games, mostly for my friends to enjoy. I make most of my games on Roblox but am currently attempting a new project using openGL, we'll see how that goes... Also I like to play basketball and am currently on an intramural team here at Colorado.</p>
+             </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2024 Gavin Zura</p>
-    </footer>
-</div>
+
+        <footer style="color: white;">
+            <p>Designed by Gavin Zura</p>
+            <address>Gavin.Zura@colorado.edu</address>
+            <small>&copy; 2024</small>
+         </footer>
+
+
+    </div>
 </body>
 </html>
