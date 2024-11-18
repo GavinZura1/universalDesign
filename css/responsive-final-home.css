@@ -1,0 +1,104 @@
+header,
+footer {
+    text-align: center;
+    background-color: lightblue;
+    padding: 1em 0;
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+footer {
+    border-top: 2px solid #000;
+    border-bottom: none;
+}
+
+nav {
+    background-color: #FAF7F0;
+    padding: 1em 0;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+    margin-top: -24px; 
+    border-left: none;
+    border-right: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-areas:
+        "header"
+        "nav"
+        "why"
+        "spacer"
+        "what"
+        "spacer"
+        "how"
+        "footer";
+    gap: 1em;
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; /* Spread nav items across the nav bar */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 50%; 
+    text-align: center;
+    font-size: 1.35em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Section content styling */
+#why, #what, #how {
+    background-color: #FAF7F0;
+    padding: 1.5em;
+    border: 1px solid #000;
+    grid-area: auto;
+}
+
+.spacer {
+    height: 2em;
+    background-color: transparent;
+}
+
+/* Adjustments for medium and small screens */
+@media screen and (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 1em;
+        max-width: 100%; /* Center-align links in mobile view */
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+        padding: 1.2em; 
+        background-color: #FFF;
+        border: 2px solid #000;
+        border-radius: 8px;
+        display: block;
+        text-align: center; 
+        width: 80%; 
+        margin: 0 auto; 
+    }
+}
