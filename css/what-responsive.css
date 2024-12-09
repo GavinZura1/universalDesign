@@ -28,19 +28,20 @@ nav {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-columns: 1fr; /* Default single-column layout for small screens */
     grid-template-areas:
         "header"
         "nav"
-        "why"
+        "definition"
         "spacer"
-        "what"
+        "principles"
         "spacer"
-        "how"
+        "demographics"
         "footer";
     gap: 1em;
     max-width: 100%;
 }
+
 
 nav ul {
     display: flex;
@@ -66,18 +67,31 @@ nav ul li a {
 }
 
 /* Section content styling */
-#why, #what, #how {
+#definition, #principles, #demographics {
     background-color: #FAF7F0;
-    border-radius: 25px;
     padding: 1.5em;
     border: 1px solid #000;
+    border-radius: 25px;
     grid-area: auto;
+}
+
+#defPic, #prinPic, #demPic {
+    padding: 1.5em;
+    grid-area: auto;
+}
+
+img {
+    width: 100%; 
+    max-width: 90%; 
+    height: auto; 
 }
 
 .spacer {
     height: 2em;
     background-color: transparent;
 }
+
+
 
 /* Adjustments for medium and small screens */
 @media screen and (max-width: 900px) {

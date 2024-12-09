@@ -28,19 +28,30 @@ nav {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-columns: 1fr; /* Default single-column layout for small screens */
     grid-template-areas:
         "header"
         "nav"
-        "why"
+        "norman"
         "spacer"
-        "what"
+        "heuristics"
         "spacer"
-        "how"
+        "interaction-design"
+        "spacer"
+        "web-standards"
+        "spacer"
+        "assistive-tech"
+        "spacer"
+        "testing"
+        "spacer"
+        "mobile-accessibility"
+        "spacer"
+        "html-examples"
         "footer";
     gap: 1em;
     max-width: 100%;
 }
+
 
 nav ul {
     display: flex;
@@ -66,18 +77,31 @@ nav ul li a {
 }
 
 /* Section content styling */
-#why, #what, #how {
+#norman, #heuristics, #interaction-design, #web-standards, #assistive-tech, #testing, #mobile-accessibility, #html-examples {
     background-color: #FAF7F0;
-    border-radius: 25px;
     padding: 1.5em;
     border: 1px solid #000;
+    border-radius: 25px;
     grid-area: auto;
+}
+
+#normPic, #heurPic, #interPic, #webPic, #techPic, #testPic, #mobilePic {
+    padding: 1.5em;
+    grid-area: auto;
+}
+
+img {
+    width: 100%; 
+    max-width: 90%; 
+    height: auto; 
 }
 
 .spacer {
     height: 2em;
     background-color: transparent;
 }
+
+
 
 /* Adjustments for medium and small screens */
 @media screen and (max-width: 900px) {
